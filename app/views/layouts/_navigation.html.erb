@@ -43,6 +43,7 @@
             <li>
               <%= link_to "View your profile", user_path(current_user) %>
             </li>
+            <li> Your profile <%= "Admin" if current_user.admin? %>
           </ul>
         </li>
         <% end %>
